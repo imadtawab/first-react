@@ -1,0 +1,56 @@
+.FirstSectionProfile {
+    display: flex;
+    column-gap: var(--l-size);
+    row-gap: 30px;
+    border-bottom: 2px solid #8888882a;
+    padding-bottom: var(--xl-size);
+    flex-wrap: wrap;
+    align-items: center;
+}
+.FirstSectionProfile > div {
+    flex: 1;
+    min-width: 250px;
+    width: 100%;
+}
+.FirstSectionProfile .profile-image {
+
+}
+.FirstSectionProfile .profile-image img {
+    width: 100%;
+    border-radius: var(--brd-rd-xl);
+}
+.FirstSectionProfile .profile-offline {
+
+}
+.FirstSectionProfile .profile-offline a {
+
+}
+.FirstSectionProfile .profile-offline h3 {
+    margin: 15px 0;
+}
+.FirstSectionProfile .profile-offline p {
+    line-height: 30px;
+    color: var(--grey-color);
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+.FirstSectionProfile .profile-card {
+    background-color: var(--dark-color);
+    border-radius: var(--brd-rd-xl);
+    padding: 0 30px;
+}
+.FirstSectionProfile .profile-card .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+.FirstSectionProfile .profile-card .row:not(:last-child) {
+    border-bottom: 2px solid #8888882a;
+}
+.FirstSectionProfile .profile-card p {
+    color: var(--grey-color) ;
+}
+.FirstSectionProfile .profile-card span {
+    color: var(--pink-color);
+    font-weight: bold;
+}

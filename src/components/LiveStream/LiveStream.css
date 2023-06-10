@@ -1,0 +1,7 @@
+.cards-live-stream{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--l-size);
+    padding-top: var(--l-size);
+}

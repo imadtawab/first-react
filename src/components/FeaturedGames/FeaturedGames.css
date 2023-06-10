@@ -1,0 +1,34 @@
+.featured-games-parent{
+  flex: 2;
+  min-width: 300px;
+}
+.slider-container{
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+/* width */
+.slider-container::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 15px;
+  }
+  
+  /* Track */
+  .slider-container::-webkit-scrollbar-track {
+    background: var(--dark-color);
+    border-radius: 15px;
+    width:6px;
+  }
+  
+  /* Handle */
+  .slider-container::-webkit-scrollbar-thumb {
+    background: var(--grey-color);
+    border-radius: 10px;
+    width:6px;
+  }
+  
+  /* Handle on hover */
+  .slider-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

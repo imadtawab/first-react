@@ -1,0 +1,7 @@
+.cards-how-to-start{
+    display: flex;
+    justify-content: space-between;
+    gap: var(--xl-size);
+    flex-wrap: wrap;
+
+}

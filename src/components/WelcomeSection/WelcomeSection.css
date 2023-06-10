@@ -1,0 +1,41 @@
+.welcome-section{
+    background-image: url(../../assets/banner-bg.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    border-radius: var(--brd-rd-xl);
+    height: 300px;
+    padding: var(--xxl-size);
+    padding-top: 80px;
+    padding-bottom: 0;
+    margin-top: var(--xxl-size);
+    color: var(--white-color-fix);
+}
+.welcome-section p{
+    font-size: 15px;
+}
+.welcome-section h1{
+    font-size: 35px;
+    line-height: 35px;
+}
+.welcome-section h1 span{
+    color:var(--pink-color)
+}
+.welcome-section a{
+    margin-top:var(--xxl-size);
+}
+/* .welcome-section a{
+    color: inherit;
+    background-color: var(--pink-color);
+    margin-top:var(--xxl-size);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all var(--trans-second);
+    position: relative;
+    top: 0;
+}
+.welcome-section a:hover{
+    opacity: 0.8;
+    top:5px;
+} */

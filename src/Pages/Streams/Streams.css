@@ -1,0 +1,5 @@
+.container-for-row{
+    display: flex;
+    gap: var(--l-size);
+    flex-wrap: wrap;
+}

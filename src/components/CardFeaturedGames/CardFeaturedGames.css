@@ -1,0 +1,73 @@
+.slider-container .featured-games-card{
+    background-color: var(--dark-color);
+    padding: var(--l-size);
+    border-radius: var(--brd-rd-xl);
+    min-width: 200px;
+    flex:1;
+}
+
+.slider-container .featured-games-card .card-image{
+    width: 100%;
+    border-radius: var(--brd-rd-l);
+    overflow: hidden;
+    position: relative;
+
+}
+.slider-container .featured-games-card .card-image img{
+    width: 100%;
+}
+.slider-container .featured-games-card .card-image .streamingNumber{
+    position: absolute;
+    color: var(--pink-color);
+    background-color: var(--dark-color);
+    padding: 12px 25px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: var(--brd-rd-xl);
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-wrap:nowrap;
+    transition: all var(--trans-second);
+    opacity: 0;
+}
+.slider-container .featured-games-card .card-image:hover .streamingNumber{
+    bottom: 30px;
+    opacity: 1;
+}
+.slider-container .featured-games-card .card-content{
+    padding: var(--m-size) 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-container .featured-games-card .card-content .text-content{
+    
+}
+.slider-container .featured-games-card .card-content .text-content h3{
+    font-size: 17px;
+}
+.slider-container .featured-games-card .card-content .text-content p{
+    color: var(--grey-color);
+    padding-top:5px;
+}
+.slider-container .featured-games-card .card-content .icon-content{
+    
+}
+.slider-container .featured-games-card .card-content .icon-content .icon{
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   justify-content: space-between;
+}
+.slider-container .featured-games-card .card-content .icon-content .icon.stars{
+    color: var(--yellow-color);
+}
+.slider-container .featured-games-card .card-content .icon-content .icon.views{
+    color:var(--pink-color);
+    padding-top: 5px;
+}
+.slider-container .featured-games-card .card-content .icon-content .icon p{
+    font-size: 15px;
+    color: var(--light-color);
+}

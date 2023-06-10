@@ -1,0 +1,8 @@
+.main-tilte{
+    color:var(--light-color);
+    margin: auto;
+    margin-top: 40px;
+    padding: var(--xxl-size) 0 0;
+    width: 100%;
+    text-align: center;
+}

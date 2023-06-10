@@ -1,0 +1,78 @@
+.card-top-download {
+    /* background-color: var(--dark-color); */
+    /* padding: var(--l-size); */
+    /* border-radius: var(--brd-rd-xl); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #8888881c;
+    padding: var(--m-size) 0;
+}
+.card-top-download .left-content{
+    flex: 1;
+    display: flex;
+    gap: var(--m-size);
+    align-items: center;
+}
+.card-top-download .left-content .card-image{
+    max-width: 100px;
+    overflow: hidden;
+    min-width: 80px;
+}
+.card-top-download .left-content .card-image img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: var(--brd-rd-l);
+}
+.card-top-download .left-content .card-content{
+    padding: var(--m-size) 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.card-top-download .left-content .card-content .text-content{
+
+}
+.card-top-download .left-content .card-content .text-content h3{
+    font-size: 17px;
+}
+.card-top-download .left-content .card-content .text-content p{
+    color: var(--grey-color);
+    padding-top:5px;
+}
+.card-top-download .left-content .card-content .icon-content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card-top-download .left-content .card-content .icon-content .icon{
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   justify-content: space-between;
+}
+.card-top-download .left-content .card-content .icon-content .icon.stars{
+    color: var(--yellow-color);
+}
+.card-top-download .left-content .card-content .icon-content .icon.views{
+    color:var(--pink-color);
+    padding-top: 5px;
+}
+.card-top-download .left-content .card-content .icon-content .icon p{
+    font-size: 15px;
+    color: var(--light-color);
+}
+.card-top-download .download-button {
+    color: var(--pink-color);
+    font-weight: bold;
+    font-size: 25px;
+    background-color: var(--dark-color);
+    width: 50px;
+    height: 50px;
+    border-radius: var(--brd-rd-cercul);
+    display: grid;
+    place-content: center;
+}
+.card-top-download .download-button a {
+    color: inherit;
+}

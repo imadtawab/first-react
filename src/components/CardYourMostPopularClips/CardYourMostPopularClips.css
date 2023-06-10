@@ -1,0 +1,35 @@
+.card-YourMostPopularClips {
+    background-color: var(--dark-color);
+    padding: var(--l-size);
+    border-radius: var(--brd-rd-xl);
+}
+.card-YourMostPopularClips .card-image{
+    width: 100%;
+    border-radius: var(--brd-rd-l);
+    overflow: hidden;
+    position: relative;
+}
+.card-YourMostPopularClips .card-image img{
+    width: 100%;
+}
+.card-YourMostPopularClips .content {
+    padding: var(--m-size) 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-YourMostPopularClips .content h3{
+    font-size: 17px;
+}
+.card-YourMostPopularClips .content .icon{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--pink-color);
+    font-size: 18px;
+ }
+.card-YourMostPopularClips .content .icon p{
+    color: var(--light-color);
+    font-size: 15px;
+}

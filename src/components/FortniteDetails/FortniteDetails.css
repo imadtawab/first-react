@@ -1,0 +1,115 @@
+
+.fortnite-details {
+
+}
+.fortnite-details .fortnite-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--l-size);
+    margin-bottom: var(--xl-size);
+}
+@media (max-width:790px) {
+    .fortnite-details .fortnite-cards {
+        flex-direction: column;
+    }
+}
+
+
+.fortnite-details .first-card,
+.fortnite-details .second-card {
+    background-color: var(--dark-color);
+    padding: var(--l-size);
+    border-radius: var(--brd-rd-xl);
+    flex: 1;
+}
+.fortnite-details .first-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fortnite-details .first-card .text-content{
+}
+.fortnite-details .first-card .text-content h3{
+    font-size: 17px;
+}
+.fortnite-details .first-card .text-content p{
+    color: var(--grey-color);
+    padding-top:5px;
+}
+.fortnite-details .first-card .icon-content{
+    
+}
+.fortnite-details .first-card .icon-content .icon{
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   justify-content: space-between;
+}
+.fortnite-details .first-card .icon-content .icon.stars{
+    color: var(--yellow-color);
+}
+.fortnite-details .first-card .icon-content .icon.views{
+    color:var(--pink-color);
+    padding-top: 5px;
+}
+.fortnite-details .first-card .icon-content .icon p{
+    font-size: 15px;
+    color: var(--light-color);
+}
+.fortnite-details .second-card {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+.fortnite-details .second-card .box {
+    color: var(--pink-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.fortnite-details .second-card .box:first-child{
+    color: var(--yellow-color);
+}
+.fortnite-details .second-card .box span {
+    color: var(--white-color);
+    font-weight: 400;
+}
+.fortnite-details .catalogue {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+
+}
+.fortnite-details .catalogue img {
+    min-width: 100px;
+    border-radius: var(--brd-rd-xl);
+}
+@media (max-width:790px) {
+
+    .fortnite-details .catalogue {
+        grid-template-columns: auto;
+    }
+    .fortnite-details .catalogue img {
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+    }
+}
+.fortnite-details .content-text {
+    padding-top: 40px;
+    color: var(--grey-color);
+    line-height: 32px;
+}
+.fortnite-details .content-text p {
+
+}
+.fortnite-details .content-text .button {
+    padding-top: 40px;
+    text-align: center;
+}
+.fortnite-details .content-text .button a {
+
+}

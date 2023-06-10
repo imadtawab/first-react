@@ -1,0 +1,23 @@
+.feature-left-right {
+    display: flex;
+    gap: var(--xl-size);
+}
+@media (max-width:590px) {
+    .feature-left-right {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.feature-left-right .left-img img, 
+.feature-left-right .right-img img {
+    border-radius: var(--brd-rd-l);
+}
+.feature-left-right .left-img {
+    flex:1;
+}
+.feature-left-right .right-img {
+    flex: 2;
+    position: relative;
+
+}

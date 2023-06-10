@@ -1,0 +1,23 @@
+.card-how-to-start {
+    padding: var(--l-size) var(--l-size);
+    border: 2px solid #88888831;
+    border-radius: var(--brd-rd-l);
+    flex-grow: 1;
+    min-width: 200px;
+    flex: 1;
+}
+.card-how-to-start .image {
+
+}
+.card-how-to-start .image img {
+    border-radius: var(--brd-rd-cercul);
+    width: 60px;
+}
+.card-how-to-start h4 {
+    padding: 10px 0;
+    font-size: 18px;
+}
+.card-how-to-start p {
+    line-height: 30px;
+    color: var(--grey-color);
+}

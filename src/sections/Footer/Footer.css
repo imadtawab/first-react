@@ -1,0 +1,6 @@
+footer{
+    color: var(--light-color);
+    text-align: center;
+    padding: var(--xl-size) 0 var(--l-size);
+    line-height: 30px;
+}

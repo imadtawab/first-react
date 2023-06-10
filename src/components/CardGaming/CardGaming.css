@@ -1,0 +1,51 @@
+ul.one-card-gaming{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #66666623;
+    padding: var(--l-size) 0;
+    flex-wrap: wrap;
+}
+ul.one-card-gaming li img {
+    max-width: 80px;
+    border-radius: var(--brd-rd-l);
+}
+ul.one-card-gaming li h4 {
+
+}
+ul.one-card-gaming li p {
+    color: var(--grey-color);
+    margin-top: calc(var(--m-size) / 2);
+}
+@media (max-width:980px) {
+    ul.one-card-gaming{
+        display: grid;
+        justify-content: space-evenly;
+        gap: 20px;
+        grid-template-areas:
+        "img img"
+        "title  date"
+        "played  currently"
+        "button button";
+        }
+    ul.one-card-gaming li.img{
+        grid-area: img;
+        text-align: center;
+    }
+    ul.one-card-gaming li.title{
+        grid-area: title;
+    }
+    ul.one-card-gaming li.date{
+        grid-area: date;
+    }
+    ul.one-card-gaming li.played{
+        grid-area: played;
+    }
+    ul.one-card-gaming li.currently{
+        grid-area: currently;
+    }
+    ul.one-card-gaming li.button{
+        grid-area: button;
+        text-align: center;
+    }
+}

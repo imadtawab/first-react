@@ -1,0 +1,10 @@
+.cards-other-related{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+}
+@media (max-width:990px) {
+    .cards-other-related{
+        grid-template-columns: auto;
+    }
+}

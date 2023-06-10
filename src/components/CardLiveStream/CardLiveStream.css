@@ -1,0 +1,63 @@
+.card-live-stream {
+    max-width: 200px;
+}
+.card-live-stream .image {
+    width: 100%;
+    position: relative;
+}
+.card-live-stream .image img {
+    border-radius: var(--brd-rd-xl);
+}
+.card-live-stream .image .box-in-hover {
+    opacity: 0;
+    transition: var(--trans-second-2);
+    --box-size: 15px
+}
+.card-live-stream .image:hover .box-in-hover{
+    opacity: 1;
+}
+.card-live-stream .image .box-in-hover > div {
+    position: absolute;
+    color: var(--light-color-fix);
+    background-color: var(--pink-color);
+    padding: 6px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.card-live-stream .image .box-in-hover .live {
+    top: var(--box-size);
+    right: var(--box-size);
+}
+.card-live-stream .image .box-in-hover .views {
+    bottom: var(--box-size);
+    left: var(--box-size);
+}
+.card-live-stream .image .box-in-hover .categorie {
+    bottom: var(--box-size);
+    right: var(--box-size);
+}
+.card-live-stream .content {
+    display: flex;
+    gap: 15px;
+    padding-top: var(--l-size);
+}
+.card-live-stream .content .profile {
+    
+}
+.card-live-stream .content .profile img {
+    width: 70px;
+    border-radius: var(--brd-rd-cercul);
+    border:2px solid var(--pink-color)
+}
+.card-live-stream .content .text {
+
+}
+.card-live-stream .content .text .sub-title {
+    color: var(--pink-color);
+    padding-bottom: 5px;
+}
+.card-live-stream .content .text .title {
+
+}

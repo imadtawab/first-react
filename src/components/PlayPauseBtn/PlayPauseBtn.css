@@ -1,0 +1,14 @@
+.PlayPauseBtn{
+    color: var(--pink-color);
+    background-color: var(--light-color-fix);
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-content: center;
+    border-radius: var(--brd-rd-cercul);
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
