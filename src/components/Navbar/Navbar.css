@@ -31,7 +31,7 @@
         border-radius: 30px;
     }
     .nav-bar li:last-child a{
-        color: var(--light-color-fix);
+        color: inherit;
         transition: var(--trans-second);
         display: flex;
         align-items: center;
@@ -44,7 +44,7 @@
     .nav-bar li:last-child:hover,
     .nav-bar li:last-child:has(a.active) {
         background-color: var(--pink-color);
-        color: var(--light-color);
+        color: var(--light-color-fix) !important;
     }
 }
 @media (max-width:790px) {

@@ -9,7 +9,7 @@
 }
 .FirstSectionProfile > div {
     flex: 1;
-    min-width: 250px;
+    min-width: 180px;
     width: 100%;
 }
 .FirstSectionProfile .profile-image {
