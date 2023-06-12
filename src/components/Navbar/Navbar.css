@@ -47,6 +47,11 @@
         color: var(--light-color-fix) !important;
     }
 }
+@media (max-width:490px) {
+    .nav-bar{
+        width: 100% !important;
+    }
+}
 @media (max-width:790px) {
     .nav-bar{
         border-radius: 0 0 var(--brd-rd-xl) var(--brd-rd-xl);
@@ -55,7 +60,7 @@
         background-color: var(--darkest-color);
         flex-direction: column;
         width: 80%;
-        top: 77px;
+        top: 76px;
         left: 50%;
         transform: translateX(-50%);
         align-items: center;
