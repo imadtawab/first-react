@@ -52,7 +52,8 @@ lightStyle = {
   
   render() {
     return (
-      <div className='header'>
+        <div className="parent-header">
+                <div className='header'>
           <div className="logo">
               <NavLink onClick={this.props.outsideMenuBar} to="/">
                 <img src={logo} alt="Logo" />
@@ -72,6 +73,7 @@ lightStyle = {
             {this.props.state.mode ==="dark" ? <button style={this.darkStyle} onClick={this.props.changeModeLight} > <BsFillSunFill/> </button> : <button style={this.lightStyle} onClick={this.props.changeModeDark} > <BsFillMoonFill/> </button>}
           </div>
       </div>
+        </div>
     )
   }
 }

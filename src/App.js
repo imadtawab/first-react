@@ -48,7 +48,7 @@ outsideMenuBar = (eo) => {
       <div className={'app ' + (this.state.mode)}>
         <BrowserRouter>
         <Header outsideMenuBar={this.outsideMenuBar} menuBar={this.menuBar} changeModeLight={this.changeModeLight} changeModeDark={this.changeModeDark} state={this.state} />          
-          <div onClick={this.OnClickOutsideMenuBar} className="ddd">
+          <div onClick={this.OnClickOutsideMenuBar}>
           <Container modee={this.state.mode}>
             <Routes>
               <Route path='/' element={<Home/>} />
