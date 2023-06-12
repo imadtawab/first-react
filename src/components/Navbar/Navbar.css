@@ -61,6 +61,7 @@
         align-items: center;
         overflow-x: hidden;
         height: 0;
+        gap: 0;
     }
     .nav-bar.activeMenuBar{
         height: 235px;
@@ -69,12 +70,22 @@
         width: 100%;
         text-align: center;
         font-weight: bold;
-        padding: 12px;
         border-bottom: 2px solid #7a666612;
+        padding: 0;
+    }
+    .nav-bar li a {
+        color: var(--grey-color);
+        transition: var(--trans-second);
+        position: relative;
+        top: 0;
+        width: 100%;
+        display: block;
+        padding: 12px;
     }
     .nav-bar li:hover a
     {
-        top: 5px;        
+        /* top: 5px;         */
+        font-size: 17px;
     }
     .nav-bar li:last-child{
         border-color: transparent !important;

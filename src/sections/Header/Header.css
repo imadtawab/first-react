@@ -5,6 +5,14 @@
     padding: 15px var(--xl-size);
     max-width: 1120px;
     margin: auto;
+    /* position fixed in top */
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--darkest-color);
+    box-shadow: 0px 0px 6px 2px var(--dark-shadow);
+    z-index: 111111111111;
 }
 .last-parent-nav{
     display: flex;

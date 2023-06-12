@@ -13,7 +13,8 @@ import React, { Component } from 'react'
 
 export default class App extends Component {
   state={
-    mode:"dark"
+    mode:"dark",
+    menuBarIsOpened: false
   }
   changeModeLight = ()=>{
     this.setState({
@@ -25,12 +26,30 @@ changeModeDark = ()=>{
     mode: "dark"
   })
 }
+menuBar = () => {
+  this.setState({
+    menuBarIsOpened: !this.state.menuBarIsOpened
+  })
+}
+outsideMenuBar = (eo) => {
+  this.setState({
+    menuBarIsOpened: false
+  })
+  console.log("###############################");
+}
+  OnClickOutsideMenuBar = () => {
+    if (this.state.menuBarIsOpened) {
+      this.outsideMenuBar()
+    }
+  }
+
   render() {
     return (
       <div className={'app ' + (this.state.mode)}>
         <BrowserRouter>
-        <Header changeModeLight={this.changeModeLight} changeModeDark={this.changeModeDark} state={this.state} />          
-        <Container modee={this.state.mode}>
+        <Header outsideMenuBar={this.outsideMenuBar} menuBar={this.menuBar} changeModeLight={this.changeModeLight} changeModeDark={this.changeModeDark} state={this.state} />          
+          <div onClick={this.OnClickOutsideMenuBar} className="ddd">
+          <Container modee={this.state.mode}>
             <Routes>
               <Route path='/' element={<Home/>} />
               <Route path='/browse' element={<Browse/>} />
@@ -39,6 +58,7 @@ changeModeDark = ()=>{
               <Route path='/profile' element={<Profile/>} />
             </Routes>
           </Container>
+          </div>
           <Footer/>
         </BrowserRouter>
       </div>

@@ -32,11 +32,11 @@ export default function Navbar(props) {
 
   return (
     <ul className={"nav-bar " + props.menuBarIsActive}> 
-        <li> <NavLink to="/" activeClassName="active">Home</NavLink> </li>
-        <li> <NavLink to="/browse">Browse</NavLink> </li>
-        <li> <NavLink to="/details">Details</NavLink> </li>
-        <li> <NavLink to="/streams">Streams</NavLink> </li>
-        <li> <NavLink to="/profile">Profile <img src={profile_header} alt="" /></NavLink> </li>
+        <li> <NavLink onClick={props.outsideMenuBar} to="/" activeClassName="active">Home</NavLink> </li>
+        <li> <NavLink onClick={props.outsideMenuBar} to="/browse">Browse</NavLink> </li>
+        <li> <NavLink onClick={props.outsideMenuBar} to="/details">Details</NavLink> </li>
+        <li> <NavLink onClick={props.outsideMenuBar} to="/streams">Streams</NavLink> </li>
+        <li> <NavLink onClick={props.outsideMenuBar} to="/profile">Profile <img src={profile_header} alt="" /></NavLink> </li>
         {/* {props.mode ==="dark" ? <button style={darkStyle} onClick={props.changeModeLight} > <BsFillSunFill/> </button> : <button style={lightStyle} onClick={props.changeModeDark} > <BsFillMoonFill/> </button>} */}
     </ul>
   )
